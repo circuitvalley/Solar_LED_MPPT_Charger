@@ -1,0 +1,1757 @@
+******************************************************************************
+                  MSP430 Linker PC v4.3.3                      
+******************************************************************************
+>> Linked Sat May 07 01:54:39 2016
+
+OUTPUT FILE NAME:   <Solar_LED_FR5739.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 0000e02c
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  SFR                   00000000   00000010  00000000  00000010  RWIX
+  PERIPHERALS_8BIT      00000010   000000f0  00000000  000000f0  RWIX
+  PERIPHERALS_16BIT     00000100   00000100  00000000  00000100  RWIX
+  INFOB                 00001800   00000080  00000000  00000080  RWIX
+  INFOA                 00001880   00000080  00000000  00000080  RWIX
+  RAM                   00001c00   00000400  00000283  0000017d  RWIX
+  FRAM                  0000c200   00003d80  00001f6e  00001e12  RWIX
+  JTAGSIGNATURE         0000ff80   00000004  00000004  00000000  RWIX  ffff 
+  BSLSIGNATURE          0000ff84   00000004  00000004  00000000  RWIX  ffff 
+  IPESIGNATURE          0000ff88   00000008  00000008  00000000  RWIX  ffff 
+  INT00                 0000ff90   00000002  00000000  00000002  RWIX
+  INT01                 0000ff92   00000002  00000000  00000002  RWIX
+  INT02                 0000ff94   00000002  00000000  00000002  RWIX
+  INT03                 0000ff96   00000002  00000000  00000002  RWIX
+  INT04                 0000ff98   00000002  00000000  00000002  RWIX
+  INT05                 0000ff9a   00000002  00000000  00000002  RWIX
+  INT06                 0000ff9c   00000002  00000000  00000002  RWIX
+  INT07                 0000ff9e   00000002  00000000  00000002  RWIX
+  INT08                 0000ffa0   00000002  00000000  00000002  RWIX
+  INT09                 0000ffa2   00000002  00000000  00000002  RWIX
+  INT10                 0000ffa4   00000002  00000000  00000002  RWIX
+  INT11                 0000ffa6   00000002  00000000  00000002  RWIX
+  INT12                 0000ffa8   00000002  00000000  00000002  RWIX
+  INT13                 0000ffaa   00000002  00000000  00000002  RWIX
+  INT14                 0000ffac   00000002  00000000  00000002  RWIX
+  INT15                 0000ffae   00000002  00000000  00000002  RWIX
+  INT16                 0000ffb0   00000002  00000000  00000002  RWIX
+  INT17                 0000ffb2   00000002  00000000  00000002  RWIX
+  INT18                 0000ffb4   00000002  00000000  00000002  RWIX
+  INT19                 0000ffb6   00000002  00000000  00000002  RWIX
+  INT20                 0000ffb8   00000002  00000000  00000002  RWIX
+  INT21                 0000ffba   00000002  00000000  00000002  RWIX
+  INT22                 0000ffbc   00000002  00000000  00000002  RWIX
+  INT23                 0000ffbe   00000002  00000000  00000002  RWIX
+  INT24                 0000ffc0   00000002  00000000  00000002  RWIX
+  INT25                 0000ffc2   00000002  00000000  00000002  RWIX
+  INT26                 0000ffc4   00000002  00000000  00000002  RWIX
+  INT27                 0000ffc6   00000002  00000000  00000002  RWIX
+  INT28                 0000ffc8   00000002  00000000  00000002  RWIX
+  INT29                 0000ffca   00000002  00000000  00000002  RWIX
+  INT30                 0000ffcc   00000002  00000000  00000002  RWIX
+  INT31                 0000ffce   00000002  00000002  00000000  RWIX
+  INT32                 0000ffd0   00000002  00000002  00000000  RWIX
+  INT33                 0000ffd2   00000002  00000002  00000000  RWIX
+  INT34                 0000ffd4   00000002  00000002  00000000  RWIX
+  INT35                 0000ffd6   00000002  00000002  00000000  RWIX
+  INT36                 0000ffd8   00000002  00000002  00000000  RWIX
+  INT37                 0000ffda   00000002  00000002  00000000  RWIX
+  INT38                 0000ffdc   00000002  00000002  00000000  RWIX
+  INT39                 0000ffde   00000002  00000002  00000000  RWIX
+  INT40                 0000ffe0   00000002  00000002  00000000  RWIX
+  INT41                 0000ffe2   00000002  00000002  00000000  RWIX
+  INT42                 0000ffe4   00000002  00000002  00000000  RWIX
+  INT43                 0000ffe6   00000002  00000002  00000000  RWIX
+  INT44                 0000ffe8   00000002  00000002  00000000  RWIX
+  INT45                 0000ffea   00000002  00000002  00000000  RWIX
+  INT46                 0000ffec   00000002  00000002  00000000  RWIX
+  INT47                 0000ffee   00000002  00000002  00000000  RWIX
+  INT48                 0000fff0   00000002  00000002  00000000  RWIX
+  INT49                 0000fff2   00000002  00000002  00000000  RWIX
+  INT50                 0000fff4   00000002  00000002  00000000  RWIX
+  INT51                 0000fff6   00000002  00000002  00000000  RWIX
+  INT52                 0000fff8   00000002  00000002  00000000  RWIX
+  INT53                 0000fffa   00000002  00000002  00000000  RWIX
+  INT54                 0000fffc   00000002  00000002  00000000  RWIX
+  RESET                 0000fffe   00000002  00000002  00000000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.data      0    00001c00    00000124     UNINITIALIZED
+                  00001c00    00000078     rts430x_lc_sd_eabi.lib : lowlev.obj (.data:_device)
+                  00001c78    00000078                            : defs.obj (.data:_ftable)
+                  00001cf0    00000028                            : lowlev.obj (.data:_stream)
+                  00001d18    00000008                            : _lock.obj (.data)
+                  00001d20    00000002                            : defs.obj (.data)
+                  00001d22    00000002                            : memory.obj (.data)
+
+.bss       0    00001d24    000000bf     UNINITIALIZED
+                  00001d24    000000a0     (.common:__TI_tmpnams)
+                  00001dc4    00000008     (.common:parmbuf)
+                  00001dcc    00000007     (.common:system)
+                  00001dd3    00000001     (.common:blinker$1)
+                  00001dd4    00000004     (.common:__TI_cleanup_ptr)
+                  00001dd8    00000004     (.common:__TI_dtors_ptr)
+                  00001ddc    00000002     (.common:memsize)
+                  00001dde    00000002     (.common:sys_base)
+                  00001de0    00000002     (.common:sys_free)
+                  00001de2    00000001     (.common:init)
+
+.stack     0    00001f60    000000a0     UNINITIALIZED
+                  00001f60    00000002     rts430x_lc_sd_eabi.lib : boot.obj (.stack)
+                  00001f62    0000009e     --HOLE--
+
+.TI.persistent 
+*          0    0000c200    00000000     UNINITIALIZED
+
+.cio       0    0000c200    00000120     UNINITIALIZED
+                  0000c200    00000120     rts430x_lc_sd_eabi.lib : trgmsg.obj (.cio)
+
+.sysmem    0    0000c320    000000a0     
+                  0000c320    00000004     rts430x_lc_sd_eabi.lib : memory.obj (.sysmem) [fill = 0]
+                  0000c324    0000009c     --HOLE-- [fill = 0]
+
+.cinit     0    0000c400    0000015c     
+                  0000c400    0000012a     (.cinit..data.load) [load image]
+                  0000c52c    0000000c     (__TI_handler_table)
+                  0000c538    00000006     (.cinit..bss.load) [load image, compression = zero_init]
+                  0000c53e    00000006     (.cinit..cio.load) [load image, compression = zero_init]
+                  0000c544    00000018     (__TI_cinit_table)
+
+.pinit     0    0000c55c    00000000     UNINITIALIZED
+
+.init_array 
+*          0    0000c55c    00000000     UNINITIALIZED
+
+.mspabi.exidx 
+*          0    0000c55c    00000000     UNINITIALIZED
+
+.mspabi.extab 
+*          0    0000c55c    00000000     UNINITIALIZED
+
+.const     0    0000c55c    00000690     
+                  0000c55c    00000690     eusci_b_i2c.obj (.const:.string)
+
+.text      0    0000cc00    0000156e     
+                  0000cc00    000001dc     main.obj (.text:_isr:led_update)
+                  0000cddc    00000178     main.obj (.text:main)
+                  0000cf54    000000de     rts430x_lc_sd_eabi.lib : fputs.obj (.text:fputs)
+                  0000d032    000000d8                            : copy_decompress_rle.obj (.text:__TI_decompress_rle_core)
+                  0000d10a    000000cc                            : setvbuf.obj (.text:setvbuf)
+                  0000d1d6    000000ac                            : memory.obj (.text:malloc)
+                  0000d282    000000a4     main.obj (.text:calcBatLevel)
+                  0000d326    00000092     eusci_b_i2c.obj (.text:EUSCI_B_I2C_masterInit)
+                  0000d3b8    00000086     rts430x_lc_sd_eabi.lib : trgdrv.obj (.text:HOSTlseek)
+                  0000d43e    00000084                            : autoinit.obj (.text:_auto_init_hold_wdt)
+                  0000d4c2    00000080                            : memory.obj (.text:free)
+                  0000d542    0000007a                            : _io_perm.obj (.text:__TI_wrt_ok)
+                  0000d5bc    00000070     main.obj (.text:_isr:switch_press)
+                  0000d62c    0000006c     main.obj (.text:update_IO)
+                  0000d698    0000006a     rts430x_lc_sd_eabi.lib : trgdrv.obj (.text:HOSTrename)
+                  0000d702    0000006a                            : fseek.obj (.text:fseek)
+                  0000d76c    00000068                            : fclose.obj (.text:__TI_closefile)
+                  0000d7d4    00000062                            : trgdrv.obj (.text:HOSTopen)
+                  0000d836    00000062                            : fflush.obj (.text:__TI_doflush)
+                  0000d898    0000005e                            : trgdrv.obj (.text:HOSTwrite)
+                  0000d8f6    0000005c                            : trgdrv.obj (.text:HOSTread)
+                  0000d952    00000058                            : div32u.obj (.text)
+                  0000d9aa    00000054                            : fflush.obj (.text:fflush)
+                  0000d9fe    00000054                            : lowlev.obj (.text:getdevice)
+                  0000da52    0000004a                            : lowlev.obj (.text:close)
+                  0000da9c    00000044                            : trgdrv.obj (.text:HOSTclose)
+                  0000dae0    00000042                            : trgdrv.obj (.text:HOSTunlink)
+                  0000db22    00000040                            : cpy_util.obj (.text:__memcpy_far)
+                  0000db62    0000003e                            : copy_zero_init.obj (.text:decompress:ZI:__TI_zero_init)
+                  0000dba0    0000003e                            : lsl32.obj (.text:l_lsl_const)
+                  0000dbde    0000003e                            : lsr32.obj (.text:l_lsr_const)
+                  0000dc1c    0000003c                            : copy_decompress_none.obj (.text:decompress:none:__TI_decompress_none)
+                  0000dc58    00000038                            : memory.obj (.text:minit)
+                  0000dc90    00000032                            : fopen.obj (.text:__TI_cleanup)
+                  0000dcc2    00000032     pwm_Ax_Bx.obj (.text:initPWMA0)
+                  0000dcf4    00000032     pwm_Ax_Bx.obj (.text:initPWMA1)
+                  0000dd26    00000032     pwm_Ax_Bx.obj (.text:initPWMB2)
+                  0000dd58    0000002e     rts430x_lc_sd_eabi.lib : trgmsg.obj (.text:__TI_writemsg)
+                  0000dd86    0000002e                            : exit.obj (.text:exit)
+                  0000ddb4    0000002e                            : lowlev.obj (.text:finddevice)
+                  0000dde2    0000002e     adc.obj (.text:initADC)
+                  0000de10    0000002c     eusci_b_i2c.obj (.text:EUSCI_B_I2C_masterMultiByteSendStart)
+                  0000de3c    0000002c     rts430x_lc_sd_eabi.lib : trgmsg.obj (.text:__TI_readmsg)
+                  0000de68    0000002c                            : strncpy.obj (.text:strncpy)
+                  0000de94    0000002a                            : lowlev.obj (.text:unlink)
+                  0000debe    00000028     adc.obj (.text:getVADC)
+                  0000dee6    00000028     main.obj (.text:initClock)
+                  0000df0e    00000026     rts430x_lc_sd_eabi.lib : lowlev.obj (.text:lseek)
+                  0000df34    00000024     main.obj (.text:initCCPB0)
+                  0000df58    00000024     pwm_Ax_Bx.obj (.text:setPWMA0)
+                  0000df7c    00000024     pwm_Ax_Bx.obj (.text:setPWMA1)
+                  0000dfa0    00000024     pwm_Ax_Bx.obj (.text:setPWMB2)
+                  0000dfc4    00000024     rts430x_lc_sd_eabi.lib : lowlev.obj (.text:write)
+                  0000dfe8    00000022     eusci_b_i2c.obj (.text:EUSCI_B_I2C_setMode)
+                  0000e00a    00000022     rts430x_lc_sd_eabi.lib : mult32_f5hw.obj (.text)
+                  0000e02c    0000001c                            : boot.obj (.text:_isr:_c_int00_noargs)
+                  0000e048    0000001a     eusci_b_i2c.obj (.text:EUSCI_B_I2C_masterMultiByteSendFinish)
+                  0000e062    0000001a     rts430x_lc_sd_eabi.lib : assert.obj (.text:_abort_msg)
+                  0000e07c    0000001a     adc.obj (.text:getVBAT)
+                  0000e096    00000018     rts430x_lc_sd_eabi.lib : strchr.obj (.text:strchr)
+                  0000e0ae    00000018                            : strcmp.obj (.text:strcmp)
+                  0000e0c6    00000016                            : div16u.obj (.text)
+                  0000e0dc    00000016                            : mult16_f5hw.obj (.text)
+                  0000e0f2    00000014                            : memchr.obj (.text:memchr)
+                  0000e106    00000012                            : memcpy.obj (.text:memcpy)
+                  0000e118    00000010                            : strcpy.obj (.text:strcpy)
+                  0000e128    0000000e                            : copy_decompress_rle.obj (.text:decompress:rle24:__TI_decompress_rle24)
+                  0000e136    0000000e                            : strlen.obj (.text:strlen)
+                  0000e144    0000000c     main.obj (.text:initLEDTIMERB1)
+                  0000e150    00000008     eusci_b_i2c.obj (.text:EUSCI_B_I2C_setSlaveAddress)
+                  0000e158    00000006     eusci_b_i2c.obj (.text:EUSCI_B_I2C_enable)
+                  0000e15e    00000006     rts430x_lc_sd_eabi.lib : isr_trap.obj (.text:__TI_ISR_TRAP)
+                  0000e164    00000004                            : pre_init.obj (.text:_system_pre_init)
+                  0000e168    00000004                            : exit.obj (.text:abort)
+                  0000e16c    00000002                            : _lock.obj (.text:_nop)
+
+$fill000   0    0000ff80    00000004     
+                  0000ff80    00000004     --HOLE-- [fill = ffff]
+
+$fill001   0    0000ff84    00000004     
+                  0000ff84    00000004     --HOLE-- [fill = ffff]
+
+$fill002   0    0000ff88    00000008     
+                  0000ff88    00000008     --HOLE-- [fill = ffff]
+
+RTC        0    0000ffce    00000002     
+                  0000ffce    00000002     rts430x_lc_sd_eabi.lib : int31.obj (.int31)
+
+PORT4      0    0000ffd0    00000002     
+                  0000ffd0    00000002     rts430x_lc_sd_eabi.lib : int32.obj (.int32)
+
+PORT3      0    0000ffd2    00000002     
+                  0000ffd2    00000002     rts430x_lc_sd_eabi.lib : int33.obj (.int33)
+
+TIMER2_B1 
+*          0    0000ffd4    00000002     
+                  0000ffd4    00000002     rts430x_lc_sd_eabi.lib : int34.obj (.int34)
+
+TIMER2_B0 
+*          0    0000ffd6    00000002     
+                  0000ffd6    00000002     rts430x_lc_sd_eabi.lib : int35.obj (.int35)
+
+PORT2      0    0000ffd8    00000002     
+                  0000ffd8    00000002     rts430x_lc_sd_eabi.lib : int36.obj (.int36)
+
+TIMER1_B1 
+*          0    0000ffda    00000002     
+                  0000ffda    00000002     main.obj (.int37)
+
+TIMER1_B0 
+*          0    0000ffdc    00000002     
+                  0000ffdc    00000002     rts430x_lc_sd_eabi.lib : int38.obj (.int38)
+
+PORT1      0    0000ffde    00000002     
+                  0000ffde    00000002     rts430x_lc_sd_eabi.lib : int39.obj (.int39)
+
+TIMER1_A1 
+*          0    0000ffe0    00000002     
+                  0000ffe0    00000002     rts430x_lc_sd_eabi.lib : int40.obj (.int40)
+
+TIMER1_A0 
+*          0    0000ffe2    00000002     
+                  0000ffe2    00000002     rts430x_lc_sd_eabi.lib : int41.obj (.int41)
+
+DMA        0    0000ffe4    00000002     
+                  0000ffe4    00000002     rts430x_lc_sd_eabi.lib : int42.obj (.int42)
+
+USCI_A1    0    0000ffe6    00000002     
+                  0000ffe6    00000002     rts430x_lc_sd_eabi.lib : int43.obj (.int43)
+
+TIMER0_A1 
+*          0    0000ffe8    00000002     
+                  0000ffe8    00000002     rts430x_lc_sd_eabi.lib : int44.obj (.int44)
+
+TIMER0_A0 
+*          0    0000ffea    00000002     
+                  0000ffea    00000002     rts430x_lc_sd_eabi.lib : int45.obj (.int45)
+
+ADC10      0    0000ffec    00000002     
+                  0000ffec    00000002     rts430x_lc_sd_eabi.lib : int46.obj (.int46)
+
+USCI_B0    0    0000ffee    00000002     
+                  0000ffee    00000002     rts430x_lc_sd_eabi.lib : int47.obj (.int47)
+
+USCI_A0    0    0000fff0    00000002     
+                  0000fff0    00000002     rts430x_lc_sd_eabi.lib : int48.obj (.int48)
+
+WDT        0    0000fff2    00000002     
+                  0000fff2    00000002     rts430x_lc_sd_eabi.lib : int49.obj (.int49)
+
+TIMER0_B1 
+*          0    0000fff4    00000002     
+                  0000fff4    00000002     main.obj (.int50)
+
+TIMER0_B0 
+*          0    0000fff6    00000002     
+                  0000fff6    00000002     rts430x_lc_sd_eabi.lib : int51.obj (.int51)
+
+COMP_D     0    0000fff8    00000002     
+                  0000fff8    00000002     rts430x_lc_sd_eabi.lib : int52.obj (.int52)
+
+UNMI       0    0000fffa    00000002     
+                  0000fffa    00000002     rts430x_lc_sd_eabi.lib : int53.obj (.int53)
+
+SYSNMI     0    0000fffc    00000002     
+                  0000fffc    00000002     rts430x_lc_sd_eabi.lib : int54.obj (.int54)
+
+.reset     0    0000fffe    00000002     
+                  0000fffe    00000002     rts430x_lc_sd_eabi.lib : boot.obj (.reset)
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 0000c544 records: 3, size/record: 8, table size: 24
+	.data: load addr=0000c400, load size=0000012a bytes, run addr=00001c00, run size=00000124 bytes, compression=copy
+	.bss: load addr=0000c538, load size=00000006 bytes, run addr=00001d24, run size=000000bf bytes, compression=zero_init
+	.cio: load addr=0000c53e, load size=00000006 bytes, run addr=0000c200, run size=00000120 bytes, compression=zero_init
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 0000c52c records: 3, size/record: 4, table size: 12
+	index: 0, handler: __TI_zero_init
+	index: 1, handler: __TI_decompress_rle24
+	index: 2, handler: __TI_decompress_none
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00000700   ADC10CTL0
+00000701   ADC10CTL0_H
+00000700   ADC10CTL0_L
+00000702   ADC10CTL1
+00000703   ADC10CTL1_H
+00000702   ADC10CTL1_L
+00000704   ADC10CTL2
+00000705   ADC10CTL2_H
+00000704   ADC10CTL2_L
+00000708   ADC10HI
+00000709   ADC10HI_H
+00000708   ADC10HI_L
+0000071a   ADC10IE
+0000071b   ADC10IE_H
+0000071a   ADC10IE_L
+0000071c   ADC10IFG
+0000071d   ADC10IFG_H
+0000071c   ADC10IFG_L
+0000071e   ADC10IV
+0000071f   ADC10IV_H
+0000071e   ADC10IV_L
+00000706   ADC10LO
+00000707   ADC10LO_H
+00000706   ADC10LO_L
+0000070a   ADC10MCTL0
+0000070b   ADC10MCTL0_H
+0000070a   ADC10MCTL0_L
+00000712   ADC10MEM0
+00000713   ADC10MEM0_H
+00000712   ADC10MEM0_L
+000004be   BCD2BIN
+000004bc   BIN2BCD
+0000e168   C$$EXIT
+0000dd82   C$$IO$$
+000008c0   CDCTL0
+000008c1   CDCTL0_H
+000008c0   CDCTL0_L
+000008c2   CDCTL1
+000008c3   CDCTL1_H
+000008c2   CDCTL1_L
+000008c4   CDCTL2
+000008c5   CDCTL2_H
+000008c4   CDCTL2_L
+000008c6   CDCTL3
+000008c7   CDCTL3_H
+000008c6   CDCTL3_L
+000008cc   CDINT
+000008cd   CDINT_H
+000008cc   CDINT_L
+000008ce   CDIV
+000008cf   CDIV_H
+000008ce   CDIV_L
+00000150   CRCDI
+00000152   CRCDIRB
+00000153   CRCDIRB_H
+00000152   CRCDIRB_L
+00000151   CRCDI_H
+00000150   CRCDI_L
+00000154   CRCINIRES
+00000155   CRCINIRES_H
+00000154   CRCINIRES_L
+00000156   CRCRESR
+00000157   CRCRESR_H
+00000156   CRCRESR_L
+00000160   CSCTL0
+00000161   CSCTL0_H
+00000160   CSCTL0_L
+00000162   CSCTL1
+00000163   CSCTL1_H
+00000162   CSCTL1_L
+00000164   CSCTL2
+00000165   CSCTL2_H
+00000164   CSCTL2_L
+00000166   CSCTL3
+00000167   CSCTL3_H
+00000166   CSCTL3_L
+00000168   CSCTL4
+00000169   CSCTL4_H
+00000168   CSCTL4_L
+0000016a   CSCTL5
+0000016b   CSCTL5_H
+0000016a   CSCTL5_L
+0000016c   CSCTL6
+0000016d   CSCTL6_H
+0000016c   CSCTL6_L
+00000510   DMA0CTL
+00000511   DMA0CTL_H
+00000510   DMA0CTL_L
+00000516   DMA0DA
+00000516   DMA0DAL
+00000512   DMA0SA
+00000512   DMA0SAL
+0000051a   DMA0SZ
+00000520   DMA1CTL
+00000521   DMA1CTL_H
+00000520   DMA1CTL_L
+00000526   DMA1DA
+00000526   DMA1DAL
+00000522   DMA1SA
+00000522   DMA1SAL
+0000052a   DMA1SZ
+00000530   DMA2CTL
+00000531   DMA2CTL_H
+00000530   DMA2CTL_L
+00000536   DMA2DA
+00000536   DMA2DAL
+00000532   DMA2SA
+00000532   DMA2SAL
+0000053a   DMA2SZ
+00000500   DMACTL0
+00000501   DMACTL0_H
+00000500   DMACTL0_L
+00000502   DMACTL1
+00000503   DMACTL1_H
+00000502   DMACTL1_L
+00000504   DMACTL2
+00000505   DMACTL2_H
+00000504   DMACTL2_L
+00000506   DMACTL3
+00000507   DMACTL3_H
+00000506   DMACTL3_L
+00000508   DMACTL4
+00000509   DMACTL4_H
+00000508   DMACTL4_L
+0000050e   DMAIV
+0000050f   DMAIV_H
+0000050e   DMAIV_L
+0000e158   EUSCI_B_I2C_enable
+0000d326   EUSCI_B_I2C_masterInit
+0000e048   EUSCI_B_I2C_masterMultiByteSendFinish
+0000de10   EUSCI_B_I2C_masterMultiByteSendStart
+0000dfe8   EUSCI_B_I2C_setMode
+0000e150   EUSCI_B_I2C_setSlaveAddress
+00000140   FRCTL0
+00000141   FRCTL0_H
+00000140   FRCTL0_L
+00000144   GCCTL0
+00000145   GCCTL0_H
+00000144   GCCTL0_L
+00000146   GCCTL1
+00000147   GCCTL1_H
+00000146   GCCTL1_L
+0000da9c   HOSTclose
+0000d3b8   HOSTlseek
+0000d7d4   HOSTopen
+0000d8f6   HOSTread
+0000d698   HOSTrename
+0000dae0   HOSTunlink
+0000d898   HOSTwrite
+000004c4   MAC
+000004da   MAC32H
+000004db   MAC32H_H
+000004da   MAC32H_L
+000004d8   MAC32L
+000004d9   MAC32L_H
+000004d8   MAC32L_L
+000004c6   MACS
+000004de   MACS32H
+000004df   MACS32H_H
+000004de   MACS32H_L
+000004dc   MACS32L
+000004dd   MACS32L_H
+000004dc   MACS32L_L
+000004c7   MACS_H
+000004c6   MACS_L
+000004c5   MAC_H
+000004c4   MAC_L
+000005a0   MPUCTL0
+000005a1   MPUCTL0_H
+000005a0   MPUCTL0_L
+000005a2   MPUCTL1
+000005a3   MPUCTL1_H
+000005a2   MPUCTL1_L
+000005a6   MPUSAM
+000005a7   MPUSAM_H
+000005a6   MPUSAM_L
+000005a4   MPUSEG
+000005a5   MPUSEG_H
+000005a4   MPUSEG_L
+000004c0   MPY
+000004ec   MPY32CTL0
+000004ed   MPY32CTL0_H
+000004ec   MPY32CTL0_L
+000004d2   MPY32H
+000004d3   MPY32H_H
+000004d2   MPY32H_L
+000004d0   MPY32L
+000004d1   MPY32L_H
+000004d0   MPY32L_L
+000004c2   MPYS
+000004d6   MPYS32H
+000004d7   MPYS32H_H
+000004d6   MPYS32H_L
+000004d4   MPYS32L
+000004d5   MPYS32L_H
+000004d4   MPYS32L_L
+000004c3   MPYS_H
+000004c2   MPYS_L
+000004c1   MPY_H
+000004c0   MPY_L
+000004c8   OP2
+000004e2   OP2H
+000004e3   OP2H_H
+000004e2   OP2H_L
+000004e0   OP2L
+000004e1   OP2L_H
+000004e0   OP2L_L
+000004c9   OP2_H
+000004c8   OP2_L
+0000020e   P1IV
+0000021e   P2IV
+0000022e   P3IV
+0000023e   P4IV
+00000204   PADIR
+00000205   PADIR_H
+00000204   PADIR_L
+0000021a   PAIE
+00000218   PAIES
+00000219   PAIES_H
+00000218   PAIES_L
+0000021b   PAIE_H
+0000021a   PAIE_L
+0000021c   PAIFG
+0000021d   PAIFG_H
+0000021c   PAIFG_L
+00000200   PAIN
+00000201   PAIN_H
+00000200   PAIN_L
+00000202   PAOUT
+00000203   PAOUT_H
+00000202   PAOUT_L
+00000206   PAREN
+00000207   PAREN_H
+00000206   PAREN_L
+0000020a   PASEL0
+0000020b   PASEL0_H
+0000020a   PASEL0_L
+0000020c   PASEL1
+0000020d   PASEL1_H
+0000020c   PASEL1_L
+00000216   PASELC
+00000217   PASELC_H
+00000216   PASELC_L
+00000224   PBDIR
+00000225   PBDIR_H
+00000224   PBDIR_L
+0000023a   PBIE
+00000238   PBIES
+00000239   PBIES_H
+00000238   PBIES_L
+0000023b   PBIE_H
+0000023a   PBIE_L
+0000023c   PBIFG
+0000023d   PBIFG_H
+0000023c   PBIFG_L
+00000220   PBIN
+00000221   PBIN_H
+00000220   PBIN_L
+00000222   PBOUT
+00000223   PBOUT_H
+00000222   PBOUT_L
+00000226   PBREN
+00000227   PBREN_H
+00000226   PBREN_L
+0000022a   PBSEL0
+0000022b   PBSEL0_H
+0000022a   PBSEL0_L
+0000022c   PBSEL1
+0000022d   PBSEL1_H
+0000022c   PBSEL1_L
+00000236   PBSELC
+00000237   PBSELC_H
+00000236   PBSELC_L
+00000324   PJDIR
+00000325   PJDIR_H
+00000324   PJDIR_L
+00000320   PJIN
+00000321   PJIN_H
+00000320   PJIN_L
+00000322   PJOUT
+00000323   PJOUT_H
+00000322   PJOUT_L
+00000326   PJREN
+00000327   PJREN_H
+00000326   PJREN_L
+0000032a   PJSEL0
+0000032b   PJSEL0_H
+0000032a   PJSEL0_L
+0000032c   PJSEL1
+0000032d   PJSEL1_H
+0000032c   PJSEL1_L
+00000336   PJSELC
+00000337   PJSELC_H
+00000336   PJSELC_L
+00000130   PM5CTL0
+00000131   PM5CTL0_H
+00000130   PM5CTL0_L
+00000120   PMMCTL0
+00000121   PMMCTL0_H
+00000120   PMMCTL0_L
+0000012a   PMMIFG
+0000012b   PMMIFG_H
+0000012a   PMMIFG_L
+000001b0   REFCTL0
+000001b1   REFCTL0_H
+000001b0   REFCTL0_L
+000004e4   RES0
+000004e5   RES0_H
+000004e4   RES0_L
+000004e6   RES1
+000004e7   RES1_H
+000004e6   RES1_L
+000004e8   RES2
+000004e9   RES2_H
+000004e8   RES2_L
+000004ea   RES3
+000004eb   RES3_H
+000004ea   RES3_L
+000004cc   RESHI
+000004cd   RESHI_H
+000004cc   RESHI_L
+000004ca   RESLO
+000004cb   RESLO_H
+000004ca   RESLO_L
+000004ba   RTCADOWDAY
+000004bb   RTCADOWDAY_H
+000004ba   RTCADOWDAY_L
+000004b8   RTCAMINHR
+000004b9   RTCAMINHR_H
+000004b8   RTCAMINHR_L
+000004a0   RTCCTL01
+000004a1   RTCCTL01_H
+000004a0   RTCCTL01_L
+000004a2   RTCCTL23
+000004a3   RTCCTL23_H
+000004a2   RTCCTL23_L
+000004b4   RTCDATE
+000004b5   RTCDATE_H
+000004b4   RTCDATE_L
+000004ae   RTCIV
+000004ac   RTCPS
+000004a8   RTCPS0CTL
+000004a9   RTCPS0CTL_H
+000004a8   RTCPS0CTL_L
+000004aa   RTCPS1CTL
+000004ab   RTCPS1CTL_H
+000004aa   RTCPS1CTL_L
+000004ad   RTCPS_H
+000004ac   RTCPS_L
+000004b0   RTCTIM0
+000004b1   RTCTIM0_H
+000004b0   RTCTIM0_L
+000004b2   RTCTIM1
+000004b3   RTCTIM1_H
+000004b2   RTCTIM1_L
+000004b6   RTCYEAR
+000004b7   RTCYEAR_H
+000004b6   RTCYEAR_L
+00000100   SFRIE1
+00000101   SFRIE1_H
+00000100   SFRIE1_L
+00000102   SFRIFG1
+00000103   SFRIFG1_H
+00000102   SFRIFG1_L
+00000104   SFRRPCR
+00000105   SFRRPCR_H
+00000104   SFRRPCR_L
+000004ce   SUMEXT
+000004cf   SUMEXT_H
+000004ce   SUMEXT_L
+00000198   SYSBERRIV
+00000199   SYSBERRIV_H
+00000198   SYSBERRIV_L
+00000182   SYSBSLC
+00000183   SYSBSLC_H
+00000182   SYSBSLC_L
+00000180   SYSCTL
+00000181   SYSCTL_H
+00000180   SYSCTL_L
+00000186   SYSJMBC
+00000187   SYSJMBC_H
+00000186   SYSJMBC_L
+00000188   SYSJMBI0
+00000189   SYSJMBI0_H
+00000188   SYSJMBI0_L
+0000018a   SYSJMBI1
+0000018b   SYSJMBI1_H
+0000018a   SYSJMBI1_L
+0000018c   SYSJMBO0
+0000018d   SYSJMBO0_H
+0000018c   SYSJMBO0_L
+0000018e   SYSJMBO1
+0000018f   SYSJMBO1_H
+0000018e   SYSJMBO1_L
+0000019e   SYSRSTIV
+0000019f   SYSRSTIV_H
+0000019e   SYSRSTIV_L
+0000019c   SYSSNIV
+0000019d   SYSSNIV_H
+0000019c   SYSSNIV_L
+0000019a   SYSUNIV
+0000019b   SYSUNIV_H
+0000019a   SYSUNIV_L
+00000352   TA0CCR0
+00000354   TA0CCR1
+00000356   TA0CCR2
+00000342   TA0CCTL0
+00000344   TA0CCTL1
+00000346   TA0CCTL2
+00000340   TA0CTL
+00000360   TA0EX0
+0000036e   TA0IV
+00000350   TA0R
+00000392   TA1CCR0
+00000394   TA1CCR1
+00000396   TA1CCR2
+00000382   TA1CCTL0
+00000384   TA1CCTL1
+00000386   TA1CCTL2
+00000380   TA1CTL
+000003a0   TA1EX0
+000003ae   TA1IV
+00000390   TA1R
+000003d2   TB0CCR0
+000003d4   TB0CCR1
+000003d6   TB0CCR2
+000003c2   TB0CCTL0
+000003c4   TB0CCTL1
+000003c6   TB0CCTL2
+000003c0   TB0CTL
+000003e0   TB0EX0
+000003ee   TB0IV
+000003d0   TB0R
+00000412   TB1CCR0
+00000414   TB1CCR1
+00000416   TB1CCR2
+00000402   TB1CCTL0
+00000404   TB1CCTL1
+00000406   TB1CCTL2
+00000400   TB1CTL
+00000420   TB1EX0
+0000042e   TB1IV
+00000410   TB1R
+00000452   TB2CCR0
+00000454   TB2CCR1
+00000456   TB2CCR2
+00000442   TB2CCTL0
+00000444   TB2CCTL1
+00000446   TB2CCTL2
+00000440   TB2CTL
+00000460   TB2EX0
+0000046e   TB2IV
+00000450   TB2R
+000005d0   UCA0ABCTL
+000005c6   UCA0BRW
+000005c7   UCA0BRW_H
+000005c6   UCA0BRW_L
+000005c0   UCA0CTLW0
+000005c1   UCA0CTLW0_H
+000005c0   UCA0CTLW0_L
+000005c2   UCA0CTLW1
+000005c3   UCA0CTLW1_H
+000005c2   UCA0CTLW1_L
+000005da   UCA0IE
+000005db   UCA0IE_H
+000005da   UCA0IE_L
+000005dc   UCA0IFG
+000005dd   UCA0IFG_H
+000005dc   UCA0IFG_L
+000005d2   UCA0IRCTL
+000005d3   UCA0IRCTL_H
+000005d2   UCA0IRCTL_L
+000005de   UCA0IV
+000005c8   UCA0MCTLW
+000005c9   UCA0MCTLW_H
+000005c8   UCA0MCTLW_L
+000005cc   UCA0RXBUF
+000005cd   UCA0RXBUF_H
+000005cc   UCA0RXBUF_L
+000005ca   UCA0STATW
+000005ce   UCA0TXBUF
+000005cf   UCA0TXBUF_H
+000005ce   UCA0TXBUF_L
+000005f0   UCA1ABCTL
+000005e6   UCA1BRW
+000005e7   UCA1BRW_H
+000005e6   UCA1BRW_L
+000005e0   UCA1CTLW0
+000005e1   UCA1CTLW0_H
+000005e0   UCA1CTLW0_L
+000005e2   UCA1CTLW1
+000005e3   UCA1CTLW1_H
+000005e2   UCA1CTLW1_L
+000005fa   UCA1IE
+000005fb   UCA1IE_H
+000005fa   UCA1IE_L
+000005fc   UCA1IFG
+000005fd   UCA1IFG_H
+000005fc   UCA1IFG_L
+000005f2   UCA1IRCTL
+000005f3   UCA1IRCTL_H
+000005f2   UCA1IRCTL_L
+000005fe   UCA1IV
+000005e8   UCA1MCTLW
+000005e9   UCA1MCTLW_H
+000005e8   UCA1MCTLW_L
+000005ec   UCA1RXBUF
+000005ed   UCA1RXBUF_H
+000005ec   UCA1RXBUF_L
+000005ea   UCA1STATW
+000005ee   UCA1TXBUF
+000005ef   UCA1TXBUF_H
+000005ee   UCA1TXBUF_L
+0000065e   UCB0ADDMASK
+0000065f   UCB0ADDMASK_H
+0000065e   UCB0ADDMASK_L
+0000065c   UCB0ADDRX
+0000065d   UCB0ADDRX_H
+0000065c   UCB0ADDRX_L
+00000646   UCB0BRW
+00000647   UCB0BRW_H
+00000646   UCB0BRW_L
+00000640   UCB0CTLW0
+00000641   UCB0CTLW0_H
+00000640   UCB0CTLW0_L
+00000642   UCB0CTLW1
+00000643   UCB0CTLW1_H
+00000642   UCB0CTLW1_L
+00000654   UCB0I2COA0
+00000655   UCB0I2COA0_H
+00000654   UCB0I2COA0_L
+00000656   UCB0I2COA1
+00000657   UCB0I2COA1_H
+00000656   UCB0I2COA1_L
+00000658   UCB0I2COA2
+00000659   UCB0I2COA2_H
+00000658   UCB0I2COA2_L
+0000065a   UCB0I2COA3
+0000065b   UCB0I2COA3_H
+0000065a   UCB0I2COA3_L
+00000660   UCB0I2CSA
+00000661   UCB0I2CSA_H
+00000660   UCB0I2CSA_L
+0000066a   UCB0IE
+0000066b   UCB0IE_H
+0000066a   UCB0IE_L
+0000066c   UCB0IFG
+0000066d   UCB0IFG_H
+0000066c   UCB0IFG_L
+0000066e   UCB0IV
+0000064c   UCB0RXBUF
+0000064d   UCB0RXBUF_H
+0000064c   UCB0RXBUF_L
+00000648   UCB0STATW
+00000649   UCB0STATW_H
+00000648   UCB0STATW_L
+0000064a   UCB0TBCNT
+0000064b   UCB0TBCNT_H
+0000064a   UCB0TBCNT_L
+0000064e   UCB0TXBUF
+0000064f   UCB0TXBUF_H
+0000064e   UCB0TXBUF_L
+0000015c   WDTCTL
+0000015d   WDTCTL_H
+0000015c   WDTCTL_L
+0000c200   _CIOBUF_
+00002000   __STACK_END
+000000a0   __STACK_SIZE
+000000a0   __SYSMEM_SIZE
+0000c544   __TI_CINIT_Base
+0000c55c   __TI_CINIT_Limit
+0000c52c   __TI_Handler_Table_Base
+0000c538   __TI_Handler_Table_Limit
+UNDEFED    __TI_INITARRAY_Base
+UNDEFED    __TI_INITARRAY_Limit
+0000e15e   __TI_ISR_TRAP
+00000001   __TI_args_main
+0000dc90   __TI_cleanup
+00001dd4   __TI_cleanup_ptr
+0000d76c   __TI_closefile
+0000dc1c   __TI_decompress_none
+0000e128   __TI_decompress_rle24
+0000d836   __TI_doflush
+00001dd8   __TI_dtors_ptr
+00000001   __TI_exit
+00001d20   __TI_ft_end
+0000ffce   __TI_int31
+0000ffd0   __TI_int32
+0000ffd2   __TI_int33
+0000ffd4   __TI_int34
+0000ffd6   __TI_int35
+0000ffd8   __TI_int36
+0000ffda   __TI_int37
+0000ffdc   __TI_int38
+0000ffde   __TI_int39
+0000ffe0   __TI_int40
+0000ffe2   __TI_int41
+0000ffe4   __TI_int42
+0000ffe6   __TI_int43
+0000ffe8   __TI_int44
+0000ffea   __TI_int45
+0000ffec   __TI_int46
+0000ffee   __TI_int47
+0000fff0   __TI_int48
+0000fff2   __TI_int49
+0000fff4   __TI_int50
+0000fff6   __TI_int51
+0000fff8   __TI_int52
+0000fffa   __TI_int53
+0000fffc   __TI_int54
+0000de3c   __TI_readmsg
+00001d24   __TI_tmpnams
+0000dd58   __TI_writemsg
+0000d542   __TI_wrt_ok
+0000db62   __TI_zero_init
+ffffffff   __binit__
+ffffffff   __c_args__
+0000db22   __memcpy_far
+0000e0c6   __mspabi_divu
+0000d952   __mspabi_divul
+0000e0dc   __mspabi_mpyi_f5hw
+0000e00a   __mspabi_mpyl_f5hw
+0000e0c6   __mspabi_remu
+0000d952   __mspabi_remul
+0000dbd8   __mspabi_slll_1
+0000dbb4   __mspabi_slll_10
+0000dbb0   __mspabi_slll_11
+0000dbac   __mspabi_slll_12
+0000dba8   __mspabi_slll_13
+0000dba4   __mspabi_slll_14
+0000dba0   __mspabi_slll_15
+0000dbd4   __mspabi_slll_2
+0000dbd0   __mspabi_slll_3
+0000dbcc   __mspabi_slll_4
+0000dbc8   __mspabi_slll_5
+0000dbc4   __mspabi_slll_6
+0000dbc0   __mspabi_slll_7
+0000dbbc   __mspabi_slll_8
+0000dbb8   __mspabi_slll_9
+0000dc16   __mspabi_srll_1
+0000dbf2   __mspabi_srll_10
+0000dbee   __mspabi_srll_11
+0000dbea   __mspabi_srll_12
+0000dbe6   __mspabi_srll_13
+0000dbe2   __mspabi_srll_14
+0000dbde   __mspabi_srll_15
+0000dc12   __mspabi_srll_2
+0000dc0e   __mspabi_srll_3
+0000dc0a   __mspabi_srll_4
+0000dc06   __mspabi_srll_5
+0000dc02   __mspabi_srll_6
+0000dbfe   __mspabi_srll_7
+0000dbfa   __mspabi_srll_8
+0000dbf6   __mspabi_srll_9
+0000e062   _abort_msg
+0000d43e   _auto_init_hold_wdt
+0000e02c   _c_int00
+0000e02c   _c_int00_noargs
+00001c78   _ftable
+00001d18   _lock
+0000e16c   _nop
+0000fffe   _reset_vector
+00001f60   _stack
+0000c320   _sys_memory
+0000e164   _system_pre_init
+00001d1c   _unlock
+0000e168   abort
+ffffffff   binit
+0000d282   calcBatLevel
+0000da52   close
+0000dd86   exit
+0000d9aa   fflush
+0000cf54   fputs
+0000c400   fram_ro_start
+0000c200   fram_rw_start
+0000cc00   fram_rx_start
+0000d4c2   free
+0000d702   fseek
+0000debe   getVADC
+0000e07c   getVBAT
+0000dde2   initADC
+0000df34   initCCPB0
+0000e144   initLEDTIMERB1
+0000dcc2   initPWMA0
+0000dcf4   initPWMA1
+0000dd26   initPWMB2
+0000cc00   led_update
+0000df0e   lseek
+0000cddc   main
+0000d1d6   malloc
+0000e0f2   memchr
+0000e106   memcpy
+0000dc58   minit
+0000de94   remove
+0000df58   setPWMA0
+0000df7c   setPWMA1
+0000dfa0   setPWMB2
+0000d10a   setvbuf
+0000e096   strchr
+0000e0ae   strcmp
+0000e118   strcpy
+0000e136   strlen
+0000de68   strncpy
+0000d5bc   switch_press
+00001dcc   system
+0000de94   unlink
+0000d62c   update_IO
+0000dfc4   write
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __TI_args_main
+00000001   __TI_exit
+000000a0   __STACK_SIZE
+000000a0   __SYSMEM_SIZE
+00000100   SFRIE1
+00000100   SFRIE1_L
+00000101   SFRIE1_H
+00000102   SFRIFG1
+00000102   SFRIFG1_L
+00000103   SFRIFG1_H
+00000104   SFRRPCR
+00000104   SFRRPCR_L
+00000105   SFRRPCR_H
+00000120   PMMCTL0
+00000120   PMMCTL0_L
+00000121   PMMCTL0_H
+0000012a   PMMIFG
+0000012a   PMMIFG_L
+0000012b   PMMIFG_H
+00000130   PM5CTL0
+00000130   PM5CTL0_L
+00000131   PM5CTL0_H
+00000140   FRCTL0
+00000140   FRCTL0_L
+00000141   FRCTL0_H
+00000144   GCCTL0
+00000144   GCCTL0_L
+00000145   GCCTL0_H
+00000146   GCCTL1
+00000146   GCCTL1_L
+00000147   GCCTL1_H
+00000150   CRCDI
+00000150   CRCDI_L
+00000151   CRCDI_H
+00000152   CRCDIRB
+00000152   CRCDIRB_L
+00000153   CRCDIRB_H
+00000154   CRCINIRES
+00000154   CRCINIRES_L
+00000155   CRCINIRES_H
+00000156   CRCRESR
+00000156   CRCRESR_L
+00000157   CRCRESR_H
+0000015c   WDTCTL
+0000015c   WDTCTL_L
+0000015d   WDTCTL_H
+00000160   CSCTL0
+00000160   CSCTL0_L
+00000161   CSCTL0_H
+00000162   CSCTL1
+00000162   CSCTL1_L
+00000163   CSCTL1_H
+00000164   CSCTL2
+00000164   CSCTL2_L
+00000165   CSCTL2_H
+00000166   CSCTL3
+00000166   CSCTL3_L
+00000167   CSCTL3_H
+00000168   CSCTL4
+00000168   CSCTL4_L
+00000169   CSCTL4_H
+0000016a   CSCTL5
+0000016a   CSCTL5_L
+0000016b   CSCTL5_H
+0000016c   CSCTL6
+0000016c   CSCTL6_L
+0000016d   CSCTL6_H
+00000180   SYSCTL
+00000180   SYSCTL_L
+00000181   SYSCTL_H
+00000182   SYSBSLC
+00000182   SYSBSLC_L
+00000183   SYSBSLC_H
+00000186   SYSJMBC
+00000186   SYSJMBC_L
+00000187   SYSJMBC_H
+00000188   SYSJMBI0
+00000188   SYSJMBI0_L
+00000189   SYSJMBI0_H
+0000018a   SYSJMBI1
+0000018a   SYSJMBI1_L
+0000018b   SYSJMBI1_H
+0000018c   SYSJMBO0
+0000018c   SYSJMBO0_L
+0000018d   SYSJMBO0_H
+0000018e   SYSJMBO1
+0000018e   SYSJMBO1_L
+0000018f   SYSJMBO1_H
+00000198   SYSBERRIV
+00000198   SYSBERRIV_L
+00000199   SYSBERRIV_H
+0000019a   SYSUNIV
+0000019a   SYSUNIV_L
+0000019b   SYSUNIV_H
+0000019c   SYSSNIV
+0000019c   SYSSNIV_L
+0000019d   SYSSNIV_H
+0000019e   SYSRSTIV
+0000019e   SYSRSTIV_L
+0000019f   SYSRSTIV_H
+000001b0   REFCTL0
+000001b0   REFCTL0_L
+000001b1   REFCTL0_H
+00000200   PAIN
+00000200   PAIN_L
+00000201   PAIN_H
+00000202   PAOUT
+00000202   PAOUT_L
+00000203   PAOUT_H
+00000204   PADIR
+00000204   PADIR_L
+00000205   PADIR_H
+00000206   PAREN
+00000206   PAREN_L
+00000207   PAREN_H
+0000020a   PASEL0
+0000020a   PASEL0_L
+0000020b   PASEL0_H
+0000020c   PASEL1
+0000020c   PASEL1_L
+0000020d   PASEL1_H
+0000020e   P1IV
+00000216   PASELC
+00000216   PASELC_L
+00000217   PASELC_H
+00000218   PAIES
+00000218   PAIES_L
+00000219   PAIES_H
+0000021a   PAIE
+0000021a   PAIE_L
+0000021b   PAIE_H
+0000021c   PAIFG
+0000021c   PAIFG_L
+0000021d   PAIFG_H
+0000021e   P2IV
+00000220   PBIN
+00000220   PBIN_L
+00000221   PBIN_H
+00000222   PBOUT
+00000222   PBOUT_L
+00000223   PBOUT_H
+00000224   PBDIR
+00000224   PBDIR_L
+00000225   PBDIR_H
+00000226   PBREN
+00000226   PBREN_L
+00000227   PBREN_H
+0000022a   PBSEL0
+0000022a   PBSEL0_L
+0000022b   PBSEL0_H
+0000022c   PBSEL1
+0000022c   PBSEL1_L
+0000022d   PBSEL1_H
+0000022e   P3IV
+00000236   PBSELC
+00000236   PBSELC_L
+00000237   PBSELC_H
+00000238   PBIES
+00000238   PBIES_L
+00000239   PBIES_H
+0000023a   PBIE
+0000023a   PBIE_L
+0000023b   PBIE_H
+0000023c   PBIFG
+0000023c   PBIFG_L
+0000023d   PBIFG_H
+0000023e   P4IV
+00000320   PJIN
+00000320   PJIN_L
+00000321   PJIN_H
+00000322   PJOUT
+00000322   PJOUT_L
+00000323   PJOUT_H
+00000324   PJDIR
+00000324   PJDIR_L
+00000325   PJDIR_H
+00000326   PJREN
+00000326   PJREN_L
+00000327   PJREN_H
+0000032a   PJSEL0
+0000032a   PJSEL0_L
+0000032b   PJSEL0_H
+0000032c   PJSEL1
+0000032c   PJSEL1_L
+0000032d   PJSEL1_H
+00000336   PJSELC
+00000336   PJSELC_L
+00000337   PJSELC_H
+00000340   TA0CTL
+00000342   TA0CCTL0
+00000344   TA0CCTL1
+00000346   TA0CCTL2
+00000350   TA0R
+00000352   TA0CCR0
+00000354   TA0CCR1
+00000356   TA0CCR2
+00000360   TA0EX0
+0000036e   TA0IV
+00000380   TA1CTL
+00000382   TA1CCTL0
+00000384   TA1CCTL1
+00000386   TA1CCTL2
+00000390   TA1R
+00000392   TA1CCR0
+00000394   TA1CCR1
+00000396   TA1CCR2
+000003a0   TA1EX0
+000003ae   TA1IV
+000003c0   TB0CTL
+000003c2   TB0CCTL0
+000003c4   TB0CCTL1
+000003c6   TB0CCTL2
+000003d0   TB0R
+000003d2   TB0CCR0
+000003d4   TB0CCR1
+000003d6   TB0CCR2
+000003e0   TB0EX0
+000003ee   TB0IV
+00000400   TB1CTL
+00000402   TB1CCTL0
+00000404   TB1CCTL1
+00000406   TB1CCTL2
+00000410   TB1R
+00000412   TB1CCR0
+00000414   TB1CCR1
+00000416   TB1CCR2
+00000420   TB1EX0
+0000042e   TB1IV
+00000440   TB2CTL
+00000442   TB2CCTL0
+00000444   TB2CCTL1
+00000446   TB2CCTL2
+00000450   TB2R
+00000452   TB2CCR0
+00000454   TB2CCR1
+00000456   TB2CCR2
+00000460   TB2EX0
+0000046e   TB2IV
+000004a0   RTCCTL01
+000004a0   RTCCTL01_L
+000004a1   RTCCTL01_H
+000004a2   RTCCTL23
+000004a2   RTCCTL23_L
+000004a3   RTCCTL23_H
+000004a8   RTCPS0CTL
+000004a8   RTCPS0CTL_L
+000004a9   RTCPS0CTL_H
+000004aa   RTCPS1CTL
+000004aa   RTCPS1CTL_L
+000004ab   RTCPS1CTL_H
+000004ac   RTCPS
+000004ac   RTCPS_L
+000004ad   RTCPS_H
+000004ae   RTCIV
+000004b0   RTCTIM0
+000004b0   RTCTIM0_L
+000004b1   RTCTIM0_H
+000004b2   RTCTIM1
+000004b2   RTCTIM1_L
+000004b3   RTCTIM1_H
+000004b4   RTCDATE
+000004b4   RTCDATE_L
+000004b5   RTCDATE_H
+000004b6   RTCYEAR
+000004b6   RTCYEAR_L
+000004b7   RTCYEAR_H
+000004b8   RTCAMINHR
+000004b8   RTCAMINHR_L
+000004b9   RTCAMINHR_H
+000004ba   RTCADOWDAY
+000004ba   RTCADOWDAY_L
+000004bb   RTCADOWDAY_H
+000004bc   BIN2BCD
+000004be   BCD2BIN
+000004c0   MPY
+000004c0   MPY_L
+000004c1   MPY_H
+000004c2   MPYS
+000004c2   MPYS_L
+000004c3   MPYS_H
+000004c4   MAC
+000004c4   MAC_L
+000004c5   MAC_H
+000004c6   MACS
+000004c6   MACS_L
+000004c7   MACS_H
+000004c8   OP2
+000004c8   OP2_L
+000004c9   OP2_H
+000004ca   RESLO
+000004ca   RESLO_L
+000004cb   RESLO_H
+000004cc   RESHI
+000004cc   RESHI_L
+000004cd   RESHI_H
+000004ce   SUMEXT
+000004ce   SUMEXT_L
+000004cf   SUMEXT_H
+000004d0   MPY32L
+000004d0   MPY32L_L
+000004d1   MPY32L_H
+000004d2   MPY32H
+000004d2   MPY32H_L
+000004d3   MPY32H_H
+000004d4   MPYS32L
+000004d4   MPYS32L_L
+000004d5   MPYS32L_H
+000004d6   MPYS32H
+000004d6   MPYS32H_L
+000004d7   MPYS32H_H
+000004d8   MAC32L
+000004d8   MAC32L_L
+000004d9   MAC32L_H
+000004da   MAC32H
+000004da   MAC32H_L
+000004db   MAC32H_H
+000004dc   MACS32L
+000004dc   MACS32L_L
+000004dd   MACS32L_H
+000004de   MACS32H
+000004de   MACS32H_L
+000004df   MACS32H_H
+000004e0   OP2L
+000004e0   OP2L_L
+000004e1   OP2L_H
+000004e2   OP2H
+000004e2   OP2H_L
+000004e3   OP2H_H
+000004e4   RES0
+000004e4   RES0_L
+000004e5   RES0_H
+000004e6   RES1
+000004e6   RES1_L
+000004e7   RES1_H
+000004e8   RES2
+000004e8   RES2_L
+000004e9   RES2_H
+000004ea   RES3
+000004ea   RES3_L
+000004eb   RES3_H
+000004ec   MPY32CTL0
+000004ec   MPY32CTL0_L
+000004ed   MPY32CTL0_H
+00000500   DMACTL0
+00000500   DMACTL0_L
+00000501   DMACTL0_H
+00000502   DMACTL1
+00000502   DMACTL1_L
+00000503   DMACTL1_H
+00000504   DMACTL2
+00000504   DMACTL2_L
+00000505   DMACTL2_H
+00000506   DMACTL3
+00000506   DMACTL3_L
+00000507   DMACTL3_H
+00000508   DMACTL4
+00000508   DMACTL4_L
+00000509   DMACTL4_H
+0000050e   DMAIV
+0000050e   DMAIV_L
+0000050f   DMAIV_H
+00000510   DMA0CTL
+00000510   DMA0CTL_L
+00000511   DMA0CTL_H
+00000512   DMA0SA
+00000512   DMA0SAL
+00000516   DMA0DA
+00000516   DMA0DAL
+0000051a   DMA0SZ
+00000520   DMA1CTL
+00000520   DMA1CTL_L
+00000521   DMA1CTL_H
+00000522   DMA1SA
+00000522   DMA1SAL
+00000526   DMA1DA
+00000526   DMA1DAL
+0000052a   DMA1SZ
+00000530   DMA2CTL
+00000530   DMA2CTL_L
+00000531   DMA2CTL_H
+00000532   DMA2SA
+00000532   DMA2SAL
+00000536   DMA2DA
+00000536   DMA2DAL
+0000053a   DMA2SZ
+000005a0   MPUCTL0
+000005a0   MPUCTL0_L
+000005a1   MPUCTL0_H
+000005a2   MPUCTL1
+000005a2   MPUCTL1_L
+000005a3   MPUCTL1_H
+000005a4   MPUSEG
+000005a4   MPUSEG_L
+000005a5   MPUSEG_H
+000005a6   MPUSAM
+000005a6   MPUSAM_L
+000005a7   MPUSAM_H
+000005c0   UCA0CTLW0
+000005c0   UCA0CTLW0_L
+000005c1   UCA0CTLW0_H
+000005c2   UCA0CTLW1
+000005c2   UCA0CTLW1_L
+000005c3   UCA0CTLW1_H
+000005c6   UCA0BRW
+000005c6   UCA0BRW_L
+000005c7   UCA0BRW_H
+000005c8   UCA0MCTLW
+000005c8   UCA0MCTLW_L
+000005c9   UCA0MCTLW_H
+000005ca   UCA0STATW
+000005cc   UCA0RXBUF
+000005cc   UCA0RXBUF_L
+000005cd   UCA0RXBUF_H
+000005ce   UCA0TXBUF
+000005ce   UCA0TXBUF_L
+000005cf   UCA0TXBUF_H
+000005d0   UCA0ABCTL
+000005d2   UCA0IRCTL
+000005d2   UCA0IRCTL_L
+000005d3   UCA0IRCTL_H
+000005da   UCA0IE
+000005da   UCA0IE_L
+000005db   UCA0IE_H
+000005dc   UCA0IFG
+000005dc   UCA0IFG_L
+000005dd   UCA0IFG_H
+000005de   UCA0IV
+000005e0   UCA1CTLW0
+000005e0   UCA1CTLW0_L
+000005e1   UCA1CTLW0_H
+000005e2   UCA1CTLW1
+000005e2   UCA1CTLW1_L
+000005e3   UCA1CTLW1_H
+000005e6   UCA1BRW
+000005e6   UCA1BRW_L
+000005e7   UCA1BRW_H
+000005e8   UCA1MCTLW
+000005e8   UCA1MCTLW_L
+000005e9   UCA1MCTLW_H
+000005ea   UCA1STATW
+000005ec   UCA1RXBUF
+000005ec   UCA1RXBUF_L
+000005ed   UCA1RXBUF_H
+000005ee   UCA1TXBUF
+000005ee   UCA1TXBUF_L
+000005ef   UCA1TXBUF_H
+000005f0   UCA1ABCTL
+000005f2   UCA1IRCTL
+000005f2   UCA1IRCTL_L
+000005f3   UCA1IRCTL_H
+000005fa   UCA1IE
+000005fa   UCA1IE_L
+000005fb   UCA1IE_H
+000005fc   UCA1IFG
+000005fc   UCA1IFG_L
+000005fd   UCA1IFG_H
+000005fe   UCA1IV
+00000640   UCB0CTLW0
+00000640   UCB0CTLW0_L
+00000641   UCB0CTLW0_H
+00000642   UCB0CTLW1
+00000642   UCB0CTLW1_L
+00000643   UCB0CTLW1_H
+00000646   UCB0BRW
+00000646   UCB0BRW_L
+00000647   UCB0BRW_H
+00000648   UCB0STATW
+00000648   UCB0STATW_L
+00000649   UCB0STATW_H
+0000064a   UCB0TBCNT
+0000064a   UCB0TBCNT_L
+0000064b   UCB0TBCNT_H
+0000064c   UCB0RXBUF
+0000064c   UCB0RXBUF_L
+0000064d   UCB0RXBUF_H
+0000064e   UCB0TXBUF
+0000064e   UCB0TXBUF_L
+0000064f   UCB0TXBUF_H
+00000654   UCB0I2COA0
+00000654   UCB0I2COA0_L
+00000655   UCB0I2COA0_H
+00000656   UCB0I2COA1
+00000656   UCB0I2COA1_L
+00000657   UCB0I2COA1_H
+00000658   UCB0I2COA2
+00000658   UCB0I2COA2_L
+00000659   UCB0I2COA2_H
+0000065a   UCB0I2COA3
+0000065a   UCB0I2COA3_L
+0000065b   UCB0I2COA3_H
+0000065c   UCB0ADDRX
+0000065c   UCB0ADDRX_L
+0000065d   UCB0ADDRX_H
+0000065e   UCB0ADDMASK
+0000065e   UCB0ADDMASK_L
+0000065f   UCB0ADDMASK_H
+00000660   UCB0I2CSA
+00000660   UCB0I2CSA_L
+00000661   UCB0I2CSA_H
+0000066a   UCB0IE
+0000066a   UCB0IE_L
+0000066b   UCB0IE_H
+0000066c   UCB0IFG
+0000066c   UCB0IFG_L
+0000066d   UCB0IFG_H
+0000066e   UCB0IV
+00000700   ADC10CTL0
+00000700   ADC10CTL0_L
+00000701   ADC10CTL0_H
+00000702   ADC10CTL1
+00000702   ADC10CTL1_L
+00000703   ADC10CTL1_H
+00000704   ADC10CTL2
+00000704   ADC10CTL2_L
+00000705   ADC10CTL2_H
+00000706   ADC10LO
+00000706   ADC10LO_L
+00000707   ADC10LO_H
+00000708   ADC10HI
+00000708   ADC10HI_L
+00000709   ADC10HI_H
+0000070a   ADC10MCTL0
+0000070a   ADC10MCTL0_L
+0000070b   ADC10MCTL0_H
+00000712   ADC10MEM0
+00000712   ADC10MEM0_L
+00000713   ADC10MEM0_H
+0000071a   ADC10IE
+0000071a   ADC10IE_L
+0000071b   ADC10IE_H
+0000071c   ADC10IFG
+0000071c   ADC10IFG_L
+0000071d   ADC10IFG_H
+0000071e   ADC10IV
+0000071e   ADC10IV_L
+0000071f   ADC10IV_H
+000008c0   CDCTL0
+000008c0   CDCTL0_L
+000008c1   CDCTL0_H
+000008c2   CDCTL1
+000008c2   CDCTL1_L
+000008c3   CDCTL1_H
+000008c4   CDCTL2
+000008c4   CDCTL2_L
+000008c5   CDCTL2_H
+000008c6   CDCTL3
+000008c6   CDCTL3_L
+000008c7   CDCTL3_H
+000008cc   CDINT
+000008cc   CDINT_L
+000008cd   CDINT_H
+000008ce   CDIV
+000008ce   CDIV_L
+000008cf   CDIV_H
+00001c78   _ftable
+00001d18   _lock
+00001d1c   _unlock
+00001d20   __TI_ft_end
+00001d24   __TI_tmpnams
+00001dcc   system
+00001dd4   __TI_cleanup_ptr
+00001dd8   __TI_dtors_ptr
+00001f60   _stack
+00002000   __STACK_END
+0000c200   _CIOBUF_
+0000c200   fram_rw_start
+0000c320   _sys_memory
+0000c400   fram_ro_start
+0000c52c   __TI_Handler_Table_Base
+0000c538   __TI_Handler_Table_Limit
+0000c544   __TI_CINIT_Base
+0000c55c   __TI_CINIT_Limit
+0000cc00   fram_rx_start
+0000cc00   led_update
+0000cddc   main
+0000cf54   fputs
+0000d10a   setvbuf
+0000d1d6   malloc
+0000d282   calcBatLevel
+0000d326   EUSCI_B_I2C_masterInit
+0000d3b8   HOSTlseek
+0000d43e   _auto_init_hold_wdt
+0000d4c2   free
+0000d542   __TI_wrt_ok
+0000d5bc   switch_press
+0000d62c   update_IO
+0000d698   HOSTrename
+0000d702   fseek
+0000d76c   __TI_closefile
+0000d7d4   HOSTopen
+0000d836   __TI_doflush
+0000d898   HOSTwrite
+0000d8f6   HOSTread
+0000d952   __mspabi_divul
+0000d952   __mspabi_remul
+0000d9aa   fflush
+0000da52   close
+0000da9c   HOSTclose
+0000dae0   HOSTunlink
+0000db22   __memcpy_far
+0000db62   __TI_zero_init
+0000dba0   __mspabi_slll_15
+0000dba4   __mspabi_slll_14
+0000dba8   __mspabi_slll_13
+0000dbac   __mspabi_slll_12
+0000dbb0   __mspabi_slll_11
+0000dbb4   __mspabi_slll_10
+0000dbb8   __mspabi_slll_9
+0000dbbc   __mspabi_slll_8
+0000dbc0   __mspabi_slll_7
+0000dbc4   __mspabi_slll_6
+0000dbc8   __mspabi_slll_5
+0000dbcc   __mspabi_slll_4
+0000dbd0   __mspabi_slll_3
+0000dbd4   __mspabi_slll_2
+0000dbd8   __mspabi_slll_1
+0000dbde   __mspabi_srll_15
+0000dbe2   __mspabi_srll_14
+0000dbe6   __mspabi_srll_13
+0000dbea   __mspabi_srll_12
+0000dbee   __mspabi_srll_11
+0000dbf2   __mspabi_srll_10
+0000dbf6   __mspabi_srll_9
+0000dbfa   __mspabi_srll_8
+0000dbfe   __mspabi_srll_7
+0000dc02   __mspabi_srll_6
+0000dc06   __mspabi_srll_5
+0000dc0a   __mspabi_srll_4
+0000dc0e   __mspabi_srll_3
+0000dc12   __mspabi_srll_2
+0000dc16   __mspabi_srll_1
+0000dc1c   __TI_decompress_none
+0000dc58   minit
+0000dc90   __TI_cleanup
+0000dcc2   initPWMA0
+0000dcf4   initPWMA1
+0000dd26   initPWMB2
+0000dd58   __TI_writemsg
+0000dd82   C$$IO$$
+0000dd86   exit
+0000dde2   initADC
+0000de10   EUSCI_B_I2C_masterMultiByteSendStart
+0000de3c   __TI_readmsg
+0000de68   strncpy
+0000de94   remove
+0000de94   unlink
+0000debe   getVADC
+0000df0e   lseek
+0000df34   initCCPB0
+0000df58   setPWMA0
+0000df7c   setPWMA1
+0000dfa0   setPWMB2
+0000dfc4   write
+0000dfe8   EUSCI_B_I2C_setMode
+0000e00a   __mspabi_mpyl_f5hw
+0000e02c   _c_int00
+0000e02c   _c_int00_noargs
+0000e048   EUSCI_B_I2C_masterMultiByteSendFinish
+0000e062   _abort_msg
+0000e07c   getVBAT
+0000e096   strchr
+0000e0ae   strcmp
+0000e0c6   __mspabi_divu
+0000e0c6   __mspabi_remu
+0000e0dc   __mspabi_mpyi_f5hw
+0000e0f2   memchr
+0000e106   memcpy
+0000e118   strcpy
+0000e128   __TI_decompress_rle24
+0000e136   strlen
+0000e144   initLEDTIMERB1
+0000e150   EUSCI_B_I2C_setSlaveAddress
+0000e158   EUSCI_B_I2C_enable
+0000e15e   __TI_ISR_TRAP
+0000e164   _system_pre_init
+0000e168   C$$EXIT
+0000e168   abort
+0000e16c   _nop
+0000ffce   __TI_int31
+0000ffd0   __TI_int32
+0000ffd2   __TI_int33
+0000ffd4   __TI_int34
+0000ffd6   __TI_int35
+0000ffd8   __TI_int36
+0000ffda   __TI_int37
+0000ffdc   __TI_int38
+0000ffde   __TI_int39
+0000ffe0   __TI_int40
+0000ffe2   __TI_int41
+0000ffe4   __TI_int42
+0000ffe6   __TI_int43
+0000ffe8   __TI_int44
+0000ffea   __TI_int45
+0000ffec   __TI_int46
+0000ffee   __TI_int47
+0000fff0   __TI_int48
+0000fff2   __TI_int49
+0000fff4   __TI_int50
+0000fff6   __TI_int51
+0000fff8   __TI_int52
+0000fffa   __TI_int53
+0000fffc   __TI_int54
+0000fffe   _reset_vector
+ffffffff   __binit__
+ffffffff   __c_args__
+ffffffff   binit
+UNDEFED    __TI_INITARRAY_Base
+UNDEFED    __TI_INITARRAY_Limit
+
+[708 symbols]
