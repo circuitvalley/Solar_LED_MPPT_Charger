@@ -1,1 +1,0 @@
-"./adc.obj" "./eusci_b_i2c.obj" "./main.obj" "./pwm_Ax_Bx.obj" "../lnk_msp430fr5739.cmd" -l"libc.a" -l"libmath.a" 
